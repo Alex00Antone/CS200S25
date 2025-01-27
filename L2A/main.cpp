@@ -1,6 +1,6 @@
 /* CSCI 200: Fix Loop and Function Errors
  *
- * Author: XXXX (_INSERT_YOUR_NAME_HERE_)
+ * Author: XXXX (Alexander Antone)
  *
  * Description:
  *    This program illustrates a variety of common loop and function 
@@ -35,13 +35,20 @@
 #include <random>       // for mt19937 generator
 using namespace std;
 
+ /**
+  * @brief prints a smiley face
+  */
+
+void printSmileyFace() {
+    cout << ":)" << endl;
+}
 /**
  * @brief adds five to the given parameter
  * @param x integer to be added to
  * @returns parameter plus five
  */
-void add_five( int x ) {
-    x += 5;
+int add_five( int x ) {
+    return x += 5;
 }
 
 /**
@@ -54,8 +61,8 @@ int generate_random_integer(const int MIN, const int MAX) {
     // create the Mersenne Twister generator
     random_device rd;
     mt19937 mt( rd() );
-
-    return (int)mt();
+    uniform_int_distribution<int> dist(MIN, MAX);
+    return (int) dist(mt);
 }
 
 /**
@@ -68,8 +75,8 @@ float generate_random_float(const float MIN, const float MAX) {
     // create the Mersenne Twister generator
     random_device rd;
     mt19937 mt( rd() );
-
-    return (float)mt();
+    uniform_real_distribution <float> dist(MIN, MAX);
+    return (float) dist(mt);
 }
 
 /**
@@ -80,7 +87,7 @@ float generate_random_float(const float MIN, const float MAX) {
  * @returns the sum of all three parameters
  */
 int sum( int x, int y, int z ) {
-    return x + x + x;
+    return x + y + z;
 }
 
 /**
@@ -89,14 +96,16 @@ int sum( int x, int y, int z ) {
  * @param b second value to multipl
  * @returns the product of the two float parameters
  */
-float multiply( float a, float b );
+float multiply( float a, float b ){
+    return a*b;
+}
 
 /**
  * @brief runs test summing numbers in the range [1, N]
  */
 void loop_test_1() {
-    // FIX =
-    // TESTS:
+    // FIX = on line 120, change < to <=
+    // TESTS:  tested 4, got 10.
 
     cout << endl;
     cout << "******************" << endl;
@@ -108,7 +117,7 @@ void loop_test_1() {
     cin >> n;
 
     int sum;
-    for( int i = 1; i < n; ++i ) {
+    for( int i = 1; i <= n; ++i ) {
          sum += i;
      }
     cout << "The sum of the numbers from 1 to " << n << " (inclusive) is: " << sum << endl;
@@ -118,8 +127,8 @@ void loop_test_1() {
  * @brief runs test summing set of prices entered by the user
  */
 void loop_test_2() {
-    // FIX =
-    // TESTS:
+    // FIX = move line 146 to line 145
+    // TESTS: tested 3 items, 3 2 1, got 6
 
     cout << endl;
     cout << "******************" << endl;
@@ -133,8 +142,9 @@ void loop_test_2() {
 
     int counter = 1;
     float totalPrice, price;
+    totalPrice = 0;
     while (counter <= numItems) {
-        totalPrice = 0;
+        
         cout << "Enter the price of item " << counter << ": ";
         cin >> price;
         totalPrice += price;
@@ -147,8 +157,8 @@ void loop_test_2() {
  * @brief runs test summing numbers in the range [1, N]
  */
 void loop_test_3() {
-    // FIX =
-    // TESTS:
+    // FIX = on line 176, increase counter by 1, on line 177, chang <= sum to <= n
+    // TESTS: tested 10, got 55
 
     cout << endl;
     cout << "******************" << endl;
@@ -163,7 +173,8 @@ void loop_test_3() {
     do {
         sum += counter;
         cout << "Sum so far: " << sum << endl;
-    } while (counter <= sum);
+        counter += 1;
+    } while (counter <= n);
 
     cout << endl << "Section III Recap" << endl;
 
@@ -174,8 +185,8 @@ void loop_test_3() {
  * @brief runs test summing i^2 in the range [1, N]
  */
 void loop_test_4() {
-    // FIX =
-    // TESTS:
+    // FIX = on line 203, change ++i to --i
+    // TESTS: tested 10, got 385
 
     cout << endl;
     cout << "******************" << endl;
@@ -189,7 +200,7 @@ void loop_test_4() {
     cin >> n;
 
     int sum = 0;
-    for( int i = n; i > 0; ++i ) {
+    for( int i = n; i > 0; --i ) {
         sum += i*i;
     }
 
@@ -200,8 +211,8 @@ void loop_test_4() {
  * @brief runs test summing i^3 in the range [1, N]
  */
 void loop_test_5() {
-    // FIX =
-    // TESTS:
+    // FIX = move counter++ inside while loop, on line 229 change counter <10 to counter <= n
+    // TESTS: tested 10, got 3025
 
     cout << endl;
     cout << "******************" << endl;
@@ -215,11 +226,12 @@ void loop_test_5() {
     cin >> n;
 
     int sum = 0, counter = 1;
-    while( counter < 10 ) {
+    while( counter <= n ) {
         sum += (counter * counter * counter);
+        counter++;
     }
 
-    counter++;
+    
 
     cout << "The sum of cubes from 1 to " << n << " is: " << sum << endl;
 }
@@ -228,8 +240,8 @@ void loop_test_5() {
  * @brief runs test using function to add five to an entered value
  */
 void function_test_1() {
-    // FIX =
-    // TESTS:
+    // FIX = made add_five function return values
+    // TESTS: tested int value of 5, returned 10
 
     cout << endl;
     cout << "******************" << endl;
@@ -249,8 +261,8 @@ void function_test_1() {
  * 
  */
 void function_test_2() {
-    // FIX =
-    // TESTS:
+    // FIX = added printsmileyface function
+    // TESTS: ran and printed smiley face
 
     cout << endl;
     cout << "******************" << endl;
@@ -264,8 +276,8 @@ void function_test_2() {
  * @brief runs test to generate five random integers within a provided range
  */
 void function_test_3() {
-    // FIX =
-    // TESTS:
+    // FIX = fixed generate_random_integer function to actually generate random integers
+    // TESTS: tested values 10, 15, got values between the 2
 
     cout << endl;
     cout << "******************" << endl;
@@ -288,8 +300,8 @@ void function_test_3() {
  * @brief runs test to use function to sum three values
  */
 void function_test_4() {
-    // FIX =
-    // TESTS:
+    // FIX = on line 304, add the num3 argument to the sum function
+    // TESTS: tested 3 2 1, got 6
 
     cout << endl;
     cout << "******************" << endl;
@@ -299,15 +311,15 @@ void function_test_4() {
     int num1, num2, num3;
     cout << "Enter three integer numbers: ";
     cin >> num1 >> num2 >> num3;
-    cout << "The sum of all three is " << sum( num1, num2 ) << endl;
+    cout << "The sum of all three is " << sum(num1, num2, num3) << endl;
 }
 
 /**
  * @brief runs test to generate five random floats within a provided range
  */
 void function_test_5() {
-    // FIX =
-    // TESTS:
+    // FIX = on line 326, add parethesis and argument to generate_random_float function
+    // TESTS: tested 1 2, got floats between 1 and 2
 
     cout << endl;
     cout << "******************" << endl;
@@ -321,7 +333,7 @@ void function_test_5() {
     cin >> max;
     cout << "Five different random floats are: " << endl;
     for( int i = 0; i < 5; ++i ) {
-        cout << "\t" << generate_random_float << endl;
+        cout << "\t" << generate_random_float(min, max) << endl;
     }
 }
 
@@ -329,8 +341,8 @@ void function_test_5() {
  * @brief runs test to use function to multiply two provided numbers
  */
 void function_test_6() {
-    // FIX =
-    // TESTS:
+    // FIX = fixed muliply function to multiply 2 floats
+    // TESTS: tested 2.56, 9.8, got 25.088
 
     cout << endl;
     cout << "******************" << endl;
