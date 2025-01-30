@@ -52,3 +52,6 @@ Lec09/main.o
 Lec09/Lec09.exe
 Lec09/CalculatorFunctions.o
 .vscode/L2B/makefile
+L2B/main.cpp
+L2B/makefile
+L2B/L2B/makefile
