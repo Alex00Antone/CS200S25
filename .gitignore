@@ -57,3 +57,11 @@ L2B/makefile
 L2B/L2B/makefile
 L2B/L2B.exe
 L2B/main.o
+L2C/CoordinateConversion.cpp
+L2C/CoordinateConversion.h
+L2C/main.cpp
+L2C/Makefile
+sandbox/main.cpp
+sandbox/Makefile
+sandbox/main.o
+sandbox/sandbox.exe
