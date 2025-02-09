@@ -65,3 +65,9 @@ sandbox/main.cpp
 sandbox/Makefile
 sandbox/main.o
 sandbox/sandbox.exe
+L2B/L2B.zip
+A2/wumpus_functions.h
+L2C/L2C.zip
+A2/wumpus_functions.cpp
+A2/Makefile
+A2/main.cpp
