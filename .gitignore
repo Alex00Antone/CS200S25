@@ -71,3 +71,7 @@ L2C/L2C.zip
 A2/wumpus_functions.cpp
 A2/Makefile
 A2/main.cpp
+.vscode/launch.json
+A2/A2.exe
+A2/main.o
+A2/wumpus_functions.o
