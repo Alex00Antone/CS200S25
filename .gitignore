@@ -75,3 +75,12 @@ A2/main.cpp
 A2/A2.exe
 A2/main.o
 A2/wumpus_functions.o
+Lec16/Makefile
+Lec15/data.txt
+Lec15/Lec15.exe
+Lec15/main.cpp
+Lec15/main.o
+Lec15/Makefile
+Lec15/mydataOut.txt
+Lec16/data.txt
+Lec16/main.cpp
