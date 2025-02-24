@@ -106,3 +106,12 @@ L3B/main.o
 L3B/string_functions.o
 .gitignore
 L3B/test_suite.o
+Lec18/main.cpp
+Lec18/Course.h
+Lec18/Course.cpp
+Lec18/Lec18.exe
+.gitignore
+Lec18/Course.o
+.gitignore
+Lec18/main.o
+Lec18/Makefile
