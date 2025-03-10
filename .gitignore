@@ -136,3 +136,17 @@ A3/solutions/happybirthday_xc.out
 A3/solutions/happybirthday.out
 A3/solutions/romeoandjuliet_xc.out
 A3/solutions/romeoandjuliet.out
+A3/A3.exe
+A3/InputProcessor.o
+A3/main.o
+A3/OutputProcessor.o
+Warehouse/Box.cpp
+Warehouse/Box.h
+Warehouse/Box.o
+Warehouse/L4A.exe
+Warehouse/main.cpp
+Warehouse/main.o
+Warehouse/Makefile
+Warehouse/Warehouse.cpp
+Warehouse/Warehouse.h
+Warehouse/Warehouse.o
