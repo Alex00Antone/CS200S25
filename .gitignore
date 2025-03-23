@@ -150,3 +150,9 @@ Warehouse/Makefile
 Warehouse/Warehouse.cpp
 Warehouse/Warehouse.h
 Warehouse/Warehouse.o
+L4B/Box.cpp
+L4B/Box.h
+L4B/main.cpp
+L4B/Makefile
+L4B/Warehouse.cpp
+L4B/Warehouse.h
