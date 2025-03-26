@@ -402,3 +402,13 @@ SFML/Window/Window.hpp
 SFML/Window/WindowBase.hpp
 SFML/Window/WindowHandle.hpp
 SFML/Window/WindowStyle.hpp
+Lec29/Animal.cpp
+Lec29/Animal.h
+Lec29/Cat.cpp
+Lec29/Cat.h
+Lec29/Dog.cpp
+Lec29/Dog.h
+Lec29/Lion.cpp
+Lec29/Lion.h
+Lec29/main.cpp
+Lec29/Makefile
