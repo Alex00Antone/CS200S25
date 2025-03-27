@@ -412,3 +412,11 @@ Lec29/Lion.cpp
 Lec29/Lion.h
 Lec29/main.cpp
 Lec29/Makefile
+Lec29/Animal.o
+Lec29/Cat.o
+Lec29/Dog.o
+Lec29/Lec29.exe
+Lec29/Lion.o
+Lec29/main.o
+SFML_template/main.o
+SFML_template/SFML_template.exe
