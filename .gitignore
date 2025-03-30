@@ -431,3 +431,16 @@ A4/data/bubble.png
 A4/Bubble.cpp
 A4/Bubble.h
 A4/Bubble.o
+L5A/ExitRoom.cpp
+L5A/ExitRoom.h
+L5A/ExitRoom.o
+L5A/GuessTheNumberRoom.cpp
+L5A/GuessTheNumberRoom.h
+L5A/GuessTheNumberRoom.o
+L5A/L5A.exe
+L5A/main.cpp
+L5A/main.o
+L5A/Makefile
+L5A/Room.cpp
+L5A/Room.h
+L5A/Room.o
