@@ -428,3 +428,6 @@ A4/Makefile
 A4/SFML_template.exe
 A4/data/arial.ttf
 A4/data/bubble.png
+A4/Bubble.cpp
+A4/Bubble.h
+A4/Bubble.o
