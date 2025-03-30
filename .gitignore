@@ -420,3 +420,11 @@ Lec29/Lion.o
 Lec29/main.o
 SFML_template/main.o
 SFML_template/SFML_template.exe
+A4/.DS_Store
+A4/Bubble.hpp
+A4/main.cpp
+A4/main.o
+A4/Makefile
+A4/SFML_template.exe
+A4/data/arial.ttf
+A4/data/bubble.png
