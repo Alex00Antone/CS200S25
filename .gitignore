@@ -444,3 +444,9 @@ L5A/Makefile
 L5A/Room.cpp
 L5A/Room.h
 L5A/Room.o
+A5/Coordinate.cpp
+A5/Coordinate.h
+A5/main.cpp
+A5/Makefile
+A5/Polygon.cpp
+A5/Polygon.h
