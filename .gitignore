@@ -450,3 +450,17 @@ A5/main.cpp
 A5/Makefile
 A5/Polygon.cpp
 A5/Polygon.h
+A5/EquilateralTriangle.cpp
+A5/EquilateralTriangle.h
+A5/IsoscelesTriangle.cpp
+A5/IsoscelesTriangle.h
+A5/Makefile.bak
+A5/polygons.dat
+A5/Quadrilateral.cpp
+A5/Quadrilateral.h
+A5/Rhombus.cpp
+A5/Rhombus.h
+A5/ScaleneTriangle.cpp
+A5/ScaleneTriangle.h
+A5/Triangle.cpp
+A5/Triangle.h
