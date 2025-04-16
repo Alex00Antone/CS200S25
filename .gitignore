@@ -474,3 +474,19 @@ A5/Quadrilateral.o
 A5/Rhombus.o
 A5/ScaleneTriangle.o
 A5/Triangle.o
+final project/DataCleaner.cpp
+final project/DataCleaner.h
+final project/main.cpp
+final project/Makefile
+final project/Regression.cpp
+final project/Regression.h
+L6A/.DS_Store
+L6A/Array.hpp
+L6A/LICENSE
+L6A/LinkedList.hpp
+L6A/List.hpp
+L6A/main.cpp
+L6A/Makefile
+L6A/README.txt
+L6A/test_suite.cpp
+L6A/test_suite.h
