@@ -490,3 +490,6 @@ L6A/Makefile
 L6A/README.txt
 L6A/test_suite.cpp
 L6A/test_suite.h
+L6A/L6A.exe
+L6A/main.o
+L6A/test_suite.o
