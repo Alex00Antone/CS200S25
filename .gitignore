@@ -540,3 +540,11 @@ L6C/L6C.exe
 L6C/main.o
 A6/A6.exe
 A6/main.o
+AXC/AXC.exe
+AXC/BinarySearchTree.cpp
+AXC/BinarySearchTree.h
+AXC/BinarySearchTree.o
+AXC/main.cpp
+AXC/main.o
+AXC/Makefile
+AXC/Makefile.bak
